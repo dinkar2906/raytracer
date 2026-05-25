@@ -1,24 +1,48 @@
 # Ray Tracer
 
-This project is a simple **ray tracer** built by following the book *Ray Tracing in One Weekend* by Peter Shirley. It’s designed to help beginners understand the core concepts of ray tracing by building everything from scratch in C++.
+A CPU-based ray tracer written from scratch in C++ implementing the core algorithms
+from *Ray Tracing in One Weekend* (Peter Shirley). Produces physically-based renders
+with realistic lighting, shadows, and materials.
 
-The code is thoroughly commented to help you follow along and understand each part of the implementation.
+![Render 1](image.png)<img width="600" height="337" alt="anotherview" src="https://github.com/user-attachments/assets/93f1ce79-ddd8-48eb-9a72-923f875d1b98" />
+[Uploading anotherview.ppm…]()
+![Uploading another.png…]()
 
-## 🛠 Features
-- Basic ray-object intersection
-- Lambertian, Metal, and Dielectric materials
-- Diffuse and reflective scattering
-- Support for multiple objects
-- Anti-aliasing
-- Recursive ray color calculation
-- Depth of field simulation
 
-## ⚠️ Note on Performance
+---
 
-This is an **intentionally unoptimized** CPU-based ray tracer designed for educational purposes. It doesn't use any GPU acceleration (CUDA, Vulkan, etc.), so rendering complex scenes with many objects or high-resolution images will be slow.
+## Features
 
-If you’re looking to experiment with rendering more complex scenes without waiting too long, consider running the code in a **cloud environment** that provides GPU support.
+| Feature | Details |
+|---|---|
+| Materials | Lambertian (diffuse), Metal (reflective), Dielectric (glass) |
+| Lighting | Physically-based diffuse scattering, reflectance, refraction |
+| Camera | Configurable FOV, position, depth of field, aperture |
+| Anti-aliasing | Multi-sample per pixel with random sampling |
+| Rendering | Recursive ray tracing with configurable max depth |
 
-## ☁️ How I Ran It
+---
 
-Since I don’t currently work with GPU programming, I used **Google Colab** to render scenes. Colab offers free access to GPU-backed runtime environments, making it a convenient option for testing and rendering this ray tracer.
+## Build & Run
+
+**Requirements:** C++17 compiler (g++ or clang++)
+
+```bash
+# Compile
+g++ -std=c++17 -O2 -o raytracer main.cpp
+
+# Render (outputs PPM format)
+./raytracer > output.ppm
+```
+
+Convert PPM to PNG for easy viewing:
+```bash
+# Linux/Mac
+convert output.ppm output.png
+
+# Or open output.ppm directly in GIMP, Photoshop, or any image viewer
+```
+
+---
+
+## Project Structure
