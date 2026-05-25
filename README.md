@@ -5,7 +5,9 @@ from *Ray Tracing in One Weekend* (Peter Shirley). Produces physically-based ren
 with realistic lighting, shadows, and materials.
 
 <img width="600" height="337" alt="anotherview" src="https://github.com/user-attachments/assets/93f1ce79-ddd8-48eb-9a72-923f875d1b98" />
-<img width="600" height="337" alt="anotherview" src="https://github.com/user-attachments/assets/68be5cc2-33df-46c6-a7f5-724a9d560d52" />
+<img width="600" height="337" alt="another" src="https://github.com/user-attachments/assets/060fea9d-9297-479b-8345-e1de4d6fdfac" />
+<img width="600" height="337" alt="image" src="https://github.com/user-attachments/assets/4cc9ab65-7d9b-4d37-b657-3650be85167c" />
+
 
 
 
